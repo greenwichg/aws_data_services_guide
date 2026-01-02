@@ -13,13 +13,13 @@
 
 ## Overview
 
-We will be running all the scripts inside the EC2 instance. So, we have to first create a new EC2 instance with suitable IAM roles.
+- We will be running all the scripts inside the EC2 instance. So, we have to first create a new EC2 instance with suitable IAM roles.
 
-Then we are going to create a Python script that gets a CSV file from a URL. Then, it will stream the CSV data row by row into the Amazon Kinesis Data Streams with predefined interval and length.
+- Then we are going to create a Python script that gets a CSV file from a URL. Then, it will stream the CSV data row by row into the Amazon Kinesis Data Streams with predefined interval and length.
 
-We are going to automate the whole process using a shell script and will be able to monitor live logs.
+- We are going to automate the whole process using a shell script and will be able to monitor live logs.
 
-This practice can be used to represent a streaming data pipeline.
+- This practice can be used to represent a streaming data pipeline.
 
 ## IAM Role
 
