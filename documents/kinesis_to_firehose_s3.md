@@ -15,17 +15,17 @@
 
 ## Overview
 
-- We are going to write a Python script that sends the CSV data line by line to Kinesis Data Streams with predefined regular time intervals.
+- We are going to write a **Python** script that sends the CSV data line by line to **Kinesis Data Streams** with predefined regular time intervals.
 
-- The script will be running with a shell script to make the process automated.
+- The script will be running with a **shell script** to make the process automated.
 
-- All scripts will be located inside the EC2 instance with suitable IAM roles.
+- All scripts will be located inside the **EC2** instance with suitable **IAM** roles.
 
-- Once the data arrives in Kinesis Data Streams, it will be sent to Firehose and be buffered there for 1 minute.
+- Once the data arrives in **Kinesis Data Streams**, it will be sent to **Firehose** and be buffered there for 1 minute.
 
 - After buffering, the data will be transferred to the S3 bucket.
 
-- Please keep in mind that all the services will be located in eu-central-1.
+- Please keep in mind that all the services will be located in **eu-central-1**.
 
 ## Amazon S3 Bucket
 
