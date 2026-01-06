@@ -49,7 +49,7 @@ We should then create the dedicated EC2 instance with the following parameters:
 
 **Amazon Kinesis → Data streams → Create data stream**
 
-We can choose **On-demand** or **Provisioned** with the desired number of shards for this project. We can name the Stream as `csv-to-kinesis-streams-dogukan-ulu`. (We can define the name as desired, but we have to modify the shell script which will be explained in the next steps.) Since we won't be using a partition key, the shard number depends on our use case at this point.
+We can choose **On-demand** or **Provisioned** with the desired number of shards for this project. We can name the Stream as **`csv-to-kinesis-streams-dogukan-ulu`**. (We can define the name as desired, but we have to modify the shell script which will be explained in the next steps.) Since we won't be using a partition key, the shard number depends on our use case at this point.
 
 We can then click on **Create Data Stream**.
 
