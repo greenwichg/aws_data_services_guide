@@ -198,7 +198,7 @@ install_packages() {
 
 ### Download and Unzip Files
 
-We are going to start the main process after getting the machine ready. The first thing is downloading the zip file from the above Github repo. This zip file includes the Python script and `requirements.txt`. Then, we will unzip the downloaded zip file.
+We are going to start the main process after getting the machine ready. The first thing is downloading the zip file from the above Github repo. This [zip file](https://github.com/greenwichg/send_data_to_aws_services/blob/main/csv_to_s3/csv_to_s3.zip) includes the [Python script](https://github.com/dogukannulu/send_data_to_aws_services/blob/main/csv_to_s3/csv_to_s3.py) and [requirements.txt](https://github.com/greenwichg/send_data_to_aws_services/blob/main/csv_to_s3/requirements.txt). Then, we will unzip the downloaded zip file.
 
 ```bash
 # Function to download the zip file
