@@ -4,7 +4,7 @@
 
 <img src="../images/aws_ingestion_emr/image_1.png" alt="Architecture Diagram" width="600">
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/dogukannulu/glue_etl_job_data_catalog_s3/tree/main/emr_zeppelin)
+[![GitHub Repository](https://github.com/greenwichg/glue_etl_job_data_catalog_s3)
 
 ---
 
