@@ -33,7 +33,7 @@ The first thing we have to do is to create an S3 bucket that we will be using to
 
 <img src="../images/kinesis_to_firehose/image_2.png" alt="Architecture Diagram" width="600">
 
-We can leave all other parameters as default. In the end, we can click on **Create bucket** (`kinesis-stream-csv-from-ec2-bucket`).
+We can leave all other parameters as default. In the end, we can click on **Create bucket** (**`kinesis-stream-csv-from-ec2-bucket`**).
 
 ## IAM Role
 
@@ -54,7 +54,7 @@ We should then create the dedicated EC2 instance with the following parameters:
 - **Key pair** → We can choose the key pair we created and install .pem file to our local machine
 - **Network settings** → Select the existing security group and we can select the one we created (It should include SSH connection as an inbound rule)
 - We should choose the IAM role we lately created
-- **Name:** send-csv-to-kinesis-ec2-instance
+- **Name:** **send-csv-to-kinesis-ec2-instance**
 - We can leave other fields as default and launch the instance.
 
 <img src="../images/kinesis_to_firehose/image_5.png" alt="Architecture Diagram" width="600">
@@ -63,7 +63,7 @@ We should then create the dedicated EC2 instance with the following parameters:
 
 Amazon Kinesis → Data streams → Create data stream
 
-We can choose **On-demand** or **Provisioned** with one shard since we will need only one shard for this project (We are going to use a hard-coded partition key. That's why we need one shard only.). We can name the Stream as `streaming-ec2-csv`.
+We can choose **On-demand** or **Provisioned** with one shard since we will need only one shard for this project (We are going to use a hard-coded partition key. That's why we need one shard only.). We can name the Stream as **`streaming-ec2-csv`**.
 
 <img src="../images/kinesis_to_firehose/image_6.png" alt="Architecture Diagram" width="600">
 
@@ -71,17 +71,17 @@ We can then click on **Create Data Stream**.
 
 ## Kinesis Firehose
 
-When it comes to the Firehose, we have to select the source as **Data Streams** and the destination as **Amazon S3**. We have to populate our Data Stream name for the Source settings. We can name our Delivery stream name as `firehose-streams-to-s3`.
+When it comes to the Firehose, we have to select the source as **Data Streams** and the destination as **Amazon S3**. We have to populate our Data Stream name for the Source settings. We can name our Delivery stream name as **`firehose-streams-to-s3`**.
 
 <img src="../images/kinesis_to_firehose/image_7.png" alt="Architecture Diagram" width="600">
 
 ### Source Settings
 
-For the Source settings, choose the Data Stream we created (`streaming-ec2-csv`).
+For the Source settings, choose the Data Stream we created (**`streaming-ec2-csv`**).
 
 ### Destination Settings
 
-When it comes to Destination settings, we can choose the S3 bucket we recently created. Data will be uploaded into the prefixes like `year/month/day/hour`.
+When it comes to Destination settings, we can choose the S3 bucket we recently created. Data will be uploaded into the prefixes like **`year/month/day/hour`**.
 
 ### Buffer Configuration
 
@@ -129,7 +129,7 @@ python3 data_streams.py --stream_name streaming-ec2-csv --interval 2 --max_rows 
 
 We may change the `interval` and `max_rows` command line arguments depending on your use case. Remember that the script will only work for iris.csv.
 
-For a broader process that will be valid for all remote CSV files, you may see the article: [How to Automate Data Streaming to Amazon Kinesis Data Streams](https://medium.com/@dogukannulu/how-to-automate-data-streaming-to-amazon-kinesis-data-streams)
+For a broader process that will be valid for all remote CSV files, you may see the article: [How to Automate Data Streaming to Amazon Kinesis Data Streams](https://github.com/greenwichg/aws_data_services_guidance/blob/main/documents/ec2_to_kinesis_streams.md)
 
 ## Python Script
 
