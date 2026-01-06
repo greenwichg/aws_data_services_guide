@@ -40,7 +40,7 @@ We should then create the dedicated EC2 instance with the following parameters:
 - **Key pair** → We can choose the key pair we created and install .pem file to our local machine
 - **Network settings** → Select the existing security group and we can select the one we created (It should include SSH connection as an inbound rule)
 - We should choose the IAM role we lately created
-- **Name:** csv-to-kinesis-streams-instance (You can choose whichever name you want)
+- **Name:** **csv-to-kinesis-streams-instance** (You can choose whichever name you want)
 - We can leave other fields as default and launch the instance.
 
 <img src="../images/ec2_to_kinesis/image_4.png" alt="Architecture Diagram" width="600">
