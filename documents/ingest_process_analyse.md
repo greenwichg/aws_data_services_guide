@@ -427,7 +427,7 @@ We can check the data on the Kinesis Data Streams dashboard by choosing **Trim H
 
 ### Check S3 Bucket
 
-We can also check the S3 bucket. We determined the buffer time limit as 60 seconds for Firehose. We are going to send the data every second and 60 records in total. It will take 1 minute in total to write the whole data. Therefore, there should be one single file for the written data as we can see below. You may also see the prefixes of the data which show `year/month/day/hour` breakdown. The file name will be determined due to the Delivery Stream name and date. You may also check the prefix `json_data/`.
+We can also check the S3 bucket. We determined the buffer time limit as 60 seconds for Firehose. We are going to send the data every second and 60 records in total. It will take 1 minute in total to write the whole data. **Therefore, there should be one single file for the written data as we can see below.** You may also see the prefixes of the data which show `year/month/day/hour` breakdown. The file name will be determined due to the Delivery Stream name and date. You may also check the prefix `json_data/`.
 
 <img src="../images/ingest_process_analyse/image_12.png" alt="Architecture Diagram" width="600">
 
