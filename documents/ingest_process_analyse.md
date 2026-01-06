@@ -2,7 +2,7 @@
 
 <img src="../images/ingest_process_analyse/image_1.png" alt="Architecture Diagram" width="600">
 
-[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/dogukannulu/aws_end_to_end_streaming_pipeline)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/greenwichg/aws_end_to_end_streaming_pipeline)
 
 ---
 
