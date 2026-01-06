@@ -431,7 +431,7 @@ We can also check the S3 bucket. We determined the buffer time limit as 60 secon
 
 <img src="../images/ingest_process_analyse/image_12.png" alt="Architecture Diagram" width="600">
 
-We can select the file and download that to our local to check how its content is designed. In the end, we will be able to see the combined JSON data with our favorite text editor. You can see the [sample Firehose JSON data here](https://github.com/dogukannulu/aws_end_to_end_streaming_pipeline/tree/main/json_to_kinesis_streams).
+We can select the file and download that to our local to check how its content is designed. In the end, we will be able to see the combined JSON data with our favorite text editor. You can see the [sample Firehose JSON data here](https://github.com/greenwichg/aws_end_to_end_streaming_pipeline/blob/main/lambda_function/firehose_resulting_data).
 
 ## Next Steps
 
