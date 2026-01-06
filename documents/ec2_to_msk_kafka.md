@@ -237,6 +237,6 @@ We can see that all the messages are obtained on the consumer window. This is ju
 
 ## Important Note
 
-**Please don't forget to delete MSK cluster and EC2 instance to avoid additional cloud costs.**
+> **Please don't forget to delete MSK cluster and EC2 instance to avoid additional cloud costs.**
 
 ---
