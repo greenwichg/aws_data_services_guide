@@ -1,4 +1,4 @@
-# AWS Cloud Data Engineering End-to-End Project — AWS Glue ETL Job, S3, Apache Spark
+# AWS Cloud Data Engineering End-to-End Project — AWS Glue ETL Job, S3, Apache Spark 
 
 <img src="../images/aws_ingestion_glue/image_1.png" alt="Architecture Diagram" width="600">
 
