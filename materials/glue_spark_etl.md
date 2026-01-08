@@ -311,8 +311,8 @@ LIMIT 10;
 
 We can see the resulting data below:
 
-- **Final Parquet File**
-- **Final CSV File**
+- **[Final Parquet File](https://github.com/greenwichg/glue_etl_job_data_catalog_s3/blob/main/data_sources/ufo_reports_final.snappy.parquet)**
+- **[Final CSV File](https://github.com/dogukannulu/glue_etl_job_data_catalog_s3/blob/main/data_sources/ufo_reports_final.csv)**
 
 ### Best Practices for Athena Queries
 
