@@ -1,5 +1,7 @@
 # Establishing a VPC for Amazon S3, Lambda, RDS and EC2
 
+<img src="../images/vpc_for_services/image_1.png" alt="Architecture Diagram" width="600">
+
 ## Tech Stack
 
 - Amazon VPC
@@ -24,6 +26,8 @@ The first thing we are going to do is create a new VPC. That's pretty much the h
 
 **Navigation:** VPC → Your VPCs → Create VPC
 
+<img src="../images/vpc_for_services/image_2.png" alt="Architecture Diagram" width="600">
+
 ### Configuration Steps
 
 1. **VPC Type:** We should choose "VPC and more" to create the subnets and decide on availability zones as well.
@@ -33,6 +37,8 @@ The first thing we are going to do is create a new VPC. That's pretty much the h
 3. **IPv4 Address:** We can define the IPv4 address. It should be a valid one. We can take the default one as well.
 
 4. **Availability Zones:** Since we want to keep the high availability, we can choose the number of AZs as 2. We can customize them as `eu-central-1a` and `eu-central-1b`. The reason behind that is we are going to create our RDS database in `eu-central-1a`.
+
+<img src="../images/vpc_for_services/image_3.png" alt="Architecture Diagram" width="600">
 
 5. **Public Subnets:** We can also choose the number of public subnets as zero since we won't need public subnets. I created them in case they might be used for any other operation in the future.
 
@@ -68,6 +74,8 @@ We have to create 3 separate security groups for RDS, Lambda, and EC2. The most 
   - Allow all traffic coming from the security group of Lambda (choose "All Traffic" as Type and paste the security group ID `sg-...`)
   - Alternative: Add the subnet IPs that will be used by RDS and Lambda as the inbound rule
 - **Outbound Rules:** Leave as is
+
+<img src="../images/vpc_for_services/image_1.png" alt="Architecture Diagram" width="600">
 
 This configuration will allow Lambda to access RDS.
 
