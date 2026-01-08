@@ -277,7 +277,7 @@ All the remaining parts will be the same. You might take a look at the above Jup
 
 ## Monitor Data Using AWS Athena and S3 Select
 
-After the run is complete and it succeeds, we can first check the S3 bucket. A new directory should be created inside the bucket named `ufo_reports_target_parquet` and the resulting parquet file should be loaded into it.
+After the run is complete and it succeeds, we can first check the S3 bucket. A new directory should be created inside the bucket named `ufo_reports_target_parquet` and the [resulting parquet file](https://github.com/greenwichg/glue_etl_job_data_catalog_s3/blob/main/data_sources/ufo_reports_final.snappy.parquet) should be loaded into it.
 
 <img src="../images/aws_ingestion_glue/image_12.png" alt="Architecture Diagram" width="600">
 
