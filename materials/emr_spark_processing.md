@@ -29,7 +29,7 @@ In this project, we will need **3 buckets**: source, target, and log.
 
 We will upload the source data into the source bucket. The source bucket's name will be a unique name that describes the process (`dirty-transactions-from-csv-to-parquet` for this project). We will upload our [initial CSV file](https://github.com/greenwichg/glue_etl_job_data_catalog_s3/blob/main/data_sources/dirty_transactions.csv) into this bucket with the key `dirty_transactions/dirty_transactions.csv`. 
 
-If we want to upload the data automatically from inside the EC2 instance, all details can be found in the article: [How to Automate Data Upload to Amazon S3](https://github.com/greenwichg/aws_data_services_guide/blob/main/documents/ec2_to_s3_upload.md).
+If we want to upload the data automatically from inside the EC2 instance, all details can be found in the article: [How to Automate Data Upload to Amazon S3](https://github.com/greenwichg/aws_data_services_guide/blob/main/materials/ec2_to_s3_upload.md).
 
 If we want to create the S3 bucket manually, we can do it via the S3 dashboard directly or upload the CSV file using AWS CLI. 
 
