@@ -83,6 +83,8 @@ This configuration will allow Lambda to access RDS.
 
 In this part, I am going to explain how to create an RDS database with the newly created VPC configuration. I will leave all other options up to your use case since they are not this article's topics. The related section while creating the RDS will be **Connectivity**.
 
+<img src="../images/vpc_for_services/image_5.png" alt="Architecture Diagram" width="600">
+
 ### Connectivity Configuration
 
 1. **EC2 Compute Resource:** We are not going to connect our RDS database directly to EC2 compute resource since we will connect it via SSH already.
@@ -90,6 +92,8 @@ In this part, I am going to explain how to create an RDS database with the newly
 2. **VPC:** Choose the VPC we created.
 
 3. **Public Access:** Should definitely be **No** since one of the main purposes of creating this VPC is to keep the services private.
+
+<img src="../images/vpc_for_services/image_6.png" alt="Architecture Diagram" width="600">
 
 4. **Security Group:** Choose the one we just created: `rds-main-sg`. This is one of the most crucial parts while creating the RDS database.
 
@@ -102,6 +106,8 @@ We can create the RDS MySQL database as described above inside our VPC and with 
 After creating the Lambda function with a desired method (Docker image is suggested), we can now assign the VPC and security group to our function.
 
 **Navigation:** Lambda Function → Configuration → VPC
+
+<img src="../images/vpc_for_services/image_7.png" alt="Architecture Diagram" width="600">
 
 ### VPC Configuration
 
@@ -118,6 +124,8 @@ I will leave other parts to you since those are not in this article's scope.
 We will go through how we can include the EC2 instance in the VPC and still connect it from the local machine via SSH tunnel. The related section is **Network settings**.
 
 **Navigation:** EC2 → Create instance → Network settings
+
+<img src="../images/vpc_for_services/image_8.png" alt="Architecture Diagram" width="600">
 
 ### Network Configuration
 
@@ -140,7 +148,3 @@ After creating the EC2 instance, we completed the whole VPC. There's nothing to 
 - $0.005 per Elastic IP address not attached to a running instance per hour (prorated)
 
 Please be careful about the deletion of the NAT gateway and VPC.
-
-## Additional Resources
-
-If you want to connect to the RDS database via DBeaver, you can take a look at the article: "DBeaver and Amazon RDS MySQL Connection" on Medium.
